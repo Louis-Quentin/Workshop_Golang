@@ -11,9 +11,9 @@
   - Vérifier l'installation:
     - go version
 
-# 2: Créer sa première route
+# 2: Print Hello World!
   - Créer son premier projet Go
-    - go mod init go_ws
+    - ```go mod init go_ws```
 
   - Télécharger le framework Gin:
     - go get -u github.com/gin-gonic/gin
@@ -51,9 +51,33 @@
       docker exec -it $Container bash -c "sh /tmp/entrypoint.sh"
       ```
 
-
 # 4: Relier sa db au back
+  - Créer un package database:
+    - créer database.go -> ```database/database.go```
+    - database.go -> ```
+	type Database struct {
+	*gorm.DB
+	} ```
+    - dans main.go ->
+    ```
+	var db database.Database
+	err := db.Init_database()
+	if err := nil {
+		log.Fatal(err)
+	}
+	```
+    - dans database.go, créer la méthode suivante: ```func (database *Database) Init_database() (err error) {...}```
 
-# 5: Signup & Signin
+# 5: Créer sa première route
+  - Main.go -> Initialiser un objet gin
+    - le faire run sur le port 8080
+  - Main.go -> créer une fonction ```func apply_routes(r *gin.Engine, db *database.Database) {...}``` 
+    * c'est ici que vous allez définir toutes les routes de votre API
+    - définir la route ```GET "/"```qui renverra le message de votre choix avec un code 200 si tout s'est bien passé, autrement 400
 
-# 6: BONUS: Authentification JWT
+# 6: Créer un Middleware
+  - 
+
+# 6: Signup & Signin
+
+# 7: BONUS: Authentification JWT
