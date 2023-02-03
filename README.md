@@ -76,8 +76,15 @@
     - définir la route ```GET "/"```qui renverra le message de votre choix avec un code 200 si tout s'est bien passé, autrement 400
 
 # 6: Créer un Middleware
-  - 
+  - écrire la fonction -> ```func (db *database.Database) gin.HandlerFunc {...}```
+    * le but de cette fonction est de créer un context contenant la db afin de le return et qu'il soit appliqué aux routes
 
-# 6: Signup & Signin
+# 7: Signup & Signin
+  - créer une route: ```POST "/register"```
+    * vous devrez ici read le body afin d'en extraire les credentials puis trouver un moyen de les stocker dans la db
+  - créer une route: ```POST "/login"```
+    - vérifier les informations contenues dans la db puis valider ou non la connection
 
 # 7: BONUS: Authentification JWT
+  - A vous de Jouer !
+    * n'hésitez pas à poser des questions
