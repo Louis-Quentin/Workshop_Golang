@@ -58,7 +58,7 @@
     - Créer un dockerfile (avec comme image de base postres) qui va créer les différentes variables pour la db:
       - ENV POSTGRES_PASSWORD
       - ENV POSTGRES_USER
-      - ENV POSTGRES_DB=gorm
+      - ENV POSTGRES_DB
       - le port de votre db
 
 # 4: Relier sa db au back
