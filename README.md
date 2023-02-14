@@ -55,7 +55,7 @@
       sleep 2
       docker exec -it $Container bash -c "sh /tmp/entrypoint.sh"
       ```
-    - Créer un dockerfile (avec comme image de base postres) qui va créer les différentes variables poour la db:
+    - Créer un dockerfile (avec comme image de base postres) qui va créer les différentes variables pour la db:
       - ENV POSTGRES_PASSWORD
       - ENV POSTGRES_USER
       - ENV POSTGRES_DB=gorm
