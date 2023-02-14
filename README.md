@@ -55,6 +55,11 @@
       sleep 2
       docker exec -it $Container bash -c "sh /tmp/entrypoint.sh"
       ```
+    - Créer un dockerfile (avec comme image de base postres) qui va créer les différentes variables poour la db:
+      - ENV POSTGRES_PASSWORD
+      - ENV POSTGRES_USER
+      - ENV POSTGRES_DB=gorm
+      - le port de votre db
 
 # 4: Relier sa db au back
   - Créer un package database:
