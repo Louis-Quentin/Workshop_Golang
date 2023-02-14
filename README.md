@@ -10,6 +10,10 @@
   
   - Vérifier l'installation:
     - go version
+  - Télécharger Docker:
+    - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-fr
+  - Vérifier l'installation:
+    - docker run hello-world 
 
 # 2: Print Hello World!
   - Créer son premier projet Go
