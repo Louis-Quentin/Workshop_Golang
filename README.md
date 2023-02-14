@@ -23,7 +23,8 @@
     - go get -u github.com/gin-gonic/gin
 
   - Hello World !
-    - import ```import "github.com/gin-gonic/gin"```
+    - créer un fichier main.go
+    - import ```import "github.com/gin-gonic/gin"``` (dans le fichier main.go)
     - à vous de trouver comment print "Hello World !"
     
   - Tester son projet:
