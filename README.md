@@ -95,6 +95,6 @@
   - créer une route: ```POST "/login"```
     - vérifier les informations contenues dans la db puis valider ou non la connection
 
-# 7: BONUS: Authentification JWT
+# 8: BONUS: Authentification JWT
   - A vous de Jouer !
     * n'hésitez pas à poser des questions
